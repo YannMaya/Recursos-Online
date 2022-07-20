@@ -4,86 +4,133 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SOBRE NOSOTROS</title>
-    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Anton&family=League+Gothic&family=Orelega+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=League+Gothic&family=Orelega+One&display=swap"
+        rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- CSS BS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <!-- css propio -->
+    <link rel="stylesheet" href="../css/estilos.css">
+    <title>Asesor Online</title>
 </head>
+
 <body>
-    <!--barra de navegacion principal para todas las paginas-->
+    <!--barra de navegacion-->
     <header>
-        <a href="../index.html"><img src="../media/logo.png" class="logo" alt="logo"></a>
-        <nav>
-            <ul>
-                <li><a href="../index.html">HOME</a></li>
-                <li><a href="subscripcion.html">SUBSCRIPCION</a></li>
-                <li><a href="recursos.html">RECURSOS</a></li>
-                <li><a href="sobreNosotros.html">SOBRE NOSOTROS</a></li>
-                <li><a href="contacto.html">CONTACTO</a></li>
-            </ul>
+        <nav class="navbar navbar-expand-lg  nav__estilo">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="../index.html"><img src="../media/logo.png" alt="logo" class="img-fluid" width="100"
+                        height="100"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav">
+                        <a class="nav-link" href="../index.html">Home</a>
+                        <a class="nav-link" href="subscripcion.html">Subscripcion</a>
+                        <a class="nav-link" href="recursos.html">Recursos</a>
+                        <a class="nav-link" href="sobreNosotros.html">Sobre Nosotros</a>
+                        <a class="nav-link" href="contacto.html">Contacto</a>
+                    </div>
+                </div>
+            </div>
         </nav>
     </header>
-    <main class="compania">
+
+    <main class="container-fluid">
         <!--seccion con info sobre la compania -->
-        <div class="cover">
-                <h1>Nuestra Historia</h1>
+        <div class="row sobre__nosotros">
+            <h1 class="animate__animated animate__headShake animate__delay-1s animate__infinite titulo__sobreNosotros">Nuestra Historia</h1>
         </div>
-        <section>
-            <div class="personal">
-                <div class="trabajador1">
-                    <img src="../media/trabajador1.png" alt="trabajador1">
-                    <p>Nuestro equipo ha trabajado durante muchos anos en este campo y gracias a ellos es que decidieron poner todos su experiencia en recursos que pretenden hacer mucho mas facil el camino para aquellos que empiezan.</p>
+        <div class="row">
+            <div class="col personal">
+                <div class="trabajador">
+                    <img src="../media/trabajador1.png" class="img-fluid" alt="trabajador2">
+                    <p data-aos="fade-up" data-aos-duration="3000" data-aos-once="true">Nuestro equipo ha trabajado durante muchos años en este campo y gracias a ellos es que decidieron poner todos su experiencia en estos recursos.</p>
                 </div>
-                <div class="trabajador2">
-                    <img src="../media/trabajador2.png" alt="trabajador2">
-                    <p>El proyecto vio la luz a comienzos del 2022 después de mucho tiempo de trabajo.</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col personal">
+                <div class="trabajador">
+                    <img src="../media/trabajador2.png" class="img-fluid" alt="trabajador2">
+                    <p data-aos="fade-up" data-aos-duration="3000" data-aos-once="true">El proyecto vio la luz a comienzos del 2022 después de mucho tiempo de trabajo.</p>
                 </div>
-                <div class="trabajador3">
-                    <img src="../media/trabajador3.png" alt="trabajador3">
-                    <p>Incluimos solo las fotos de nuestro equipo y no sus titulos o puestos porque creemos que todas las personas qua
-                        trabajaron tienen igual nivel de influencia en el proyecto.
+            </div>
+        </div>
+        <div class="row">
+            <div class="col personal"></div>
+                <div class="trabajador">
+                    <img src="../media/trabajador3.png" class="img-fluid" alt="trabajador3">
+                    <p data-aos="fade-up" data-aos-duration="3000" data-aos-once="true">Incluímos solo las fotos de nuestro equipo y no sus títulos o puestos.
                     </p>
                 </div>
             </div>
-        </section>
+        </div>
+        </row>
     <!--mision de la empresa-->
-        <section class="misionEmpresa">
-            <h2>Nuestra Mision</h2>
-                <div class="espacioVideo">
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/eJOTfqFTN4Q" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <div class="row mision__empresa">
+            <div class="col">
+                <h2 class="nuestra__mision">Nuestra Mision</h2>
+                <div class="embed-responsive embed-responsive-4by3 espacio__video">
+                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/eJOTfqFTN4Q" title="YouTube video player" data-aos="fade-up" data-aos-duration="1500" data-aos-once="true" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 </div>
-                <div class="apoyo">
-                    <h3>Apoyo</h3>
-                    <p>Sabemos que los profesionales hoy en dia siguen siendo el ingrediente esencial en el aprendizaje. El dominio real de un tema no se puede alcanzar sin una guia.</p>
-                </div>
-                <div class="flexibilidad">
-                    <h3>Flexibilidad</h3>
-                    <p> Creamos contenido que se puede utilizar de diversas maneras para una amplia gama de necesidades. Nuestro contenido es adaptativo en lugar de prescriptivo. Permite a los profesionales puedan proporcionar un servicio personalizado</p>
-                </div>
-                <div class="colaboracion">
-                    <h3>Colaboracion</h3>
-                    <p>Recursos Online crea contenido interactivo para la era digital. Al reelaborar el contenido en función de sus comentarios, todos podemos contribuir para hacer un lugar mejor.</p>
-                </div>  
-        </section>
+            </div>
+        </div>
+        <div class="row">
+            <div class="valores__empresa">
+                <h3>Apoyo</h3>
+                <p class="texto__empresa" data-aos="fade-left" data-aos-duration="3000" data-aos-once="true">Sabemos que los profesionales hoy en dia siguen siendo el ingrediente esencial en el aprendizaje. El dominio real de un tema no se puede alcanzar sin una guia.</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="valores__empresa">
+                <h3>Flexibilidad</h3>
+                <p class="texto__empresa" data-aos="fade-left" data-aos-duration="3000" data-aos-once="true"> Creamos contenido que se puede utilizar de diversas maneras para una amplia gama de necesidades. Nuestro contenido es adaptativo en lugar de prescriptivo. Permite a los profesionales puedan proporcionar un servicio personalizado.</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="valores__empresa">
+                <h3>Colaboracion</h3>
+                <p class="texto__empresa" data-aos="fade-left" data-aos-duration="3000" data-aos-once="true">Recursos Online crea contenido interactivo para la era digital. Al reelaborar el contenido en función de sus comentarios, todos podemos contribuir para hacer un lugar mejor.</p>
+            </div>       
+        </div>
     </main>
     <!--footer-->
     <footer>
-        <nav class="footerNav">
-            <ul>
-                <li><a href="../index.html">Home</a></li>
-                <li><a href="subscripcion.html">Subscripcion</a></li>
-                <li><a href="recursos.html">Recursos</a></li>
-                <li><a href="sobreNosotros.html">Sobre nosotros</a></li>
-                <li><a href="contacto.html">Contacto</a></li>
-            </ul>
-            <div class="redesSociales">
-                <a href="#"><img src="../media/facebook.png" alt="facebook"></a>
-                <a href="#"><img src="../media/instagram.png" alt="instagram"></a>
-                <a href="#"><img src="../media/tiktok.png" alt="tiktok"></a>
+        <div class="row ">
+            <div class="col foot__nav">
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="subscripcion.html">Subscripcion</a></li>
+                    <li><a href="recursos.html">Recursos</a></li>
+                    <li><a href="sobreNosotros.html">Sobre nosotros</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+                <div class="redes__sociales">
+                    <a href="#"><img src="../media/facebook.png" alt="facebook"></a>
+                    <a href="#"><img src="../media/instagram.png" alt="instagram"></a>
+                    <a href="#"><img src="../media/tiktok.png" alt="tiktok"></a>
+                </div>
+                </nav>
+                <p>@2022 Recursos Online</p>
             </div>
-        </nav>
-        <p>@2022 Recursos Online</p>
+        </div>
     </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+        crossorigin="anonymous"></script>
 </body>
+
 </html>

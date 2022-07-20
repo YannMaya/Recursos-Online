@@ -12,16 +12,16 @@
     <!-- CSS BS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <!-- css propio -->
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/estilos.css">
     <title>Asesor Online</title>
 </head>
 <body>
     <!--barra de navegacion-->
     <header>
-        <nav class="navbar navbar-expand-lg  navEstilo">
+        <nav class="navbar navbar-expand-lg nav__estilo">
             <div class="container-fluid">
                 <a class="navbar-brand" href="#"><img src="media/logo.png" alt="logo" class="img-fluid" width="100" height="100"></a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="true" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
@@ -39,36 +39,36 @@
     <!-- seccion principal -->
     <main class="container-fluid" >
         <div class="row">
-            <div class="col-lg-12 col-md-12 col-xs-12 backgroundTitulo"> 
+            <div class="col-lg-12 col-md-12 col-xs-12 background__titulo"> 
                 <h1 class="animate__animated animate__headShake animate__delay-1s animate__infinite" style="font-size: 12vw;" >BIENVENIDO</h1>
             </div>
         </div>
         <div class="row main">
-            <div class="col col-12 col-lg-6 col-md-12 col-sm-12 textoPrincipal"> 
-                <p data-aos="fade-left">Somos la solución que necesitas para que puedas alcanzar cualquiera de tus objetivos. Somos rápidos, eficientes y tenemos pasión por lo que hacemos</p>
+            <div class="col col-12 col-lg-6 col-md-12 col-sm-12 texto__principal"> 
+                <p data-aos="fade-left" data-aos-duration="2500" data-aos-once="true">Somos la solución que necesitas para que puedas alcanzar cualquiera de tus objetivos. Somos rápidos, eficientes y tenemos pasión por lo que hacemos</p>
             </div>
-            <div class="col col-12 col-lg-6 col-md-12 col-sm-12 imagenPrincipal"> 
-                <img src="media/imagenPrincipal.png" class="img-fluid" data-aos="fade-right" alt="imagenprincipal">
+            <div class="col col-12 col-lg-6 col-md-12 col-sm-12 imagen__principal"> 
+                <img src="media/imagenPrincipal.png" class="img-fluid" data-aos="fade-right" data-aos-duration="2500" alt="imagenprincipal">
             </div>
         </div>
 
         <!-- seccion para productos -->
         <div class="row productos">
-            <div class="col col-12 col-lg-12 col-md-12 col-sm-12 subtituloRecursos"> 
+            <div class="col col-12 col-lg-12 col-md-12 col-sm-12 subtitulo__recursos"> 
                 <h2 style="font-size: 7vw;">NUESTROS PRODUCTOS</h2>
             </div>
         </div>
         <div class="row recursos">
-            <div class="col col-12 col-lg-6 col-md-12 col-sm-12 imagenRecursos"> 
-                <img src="media/imagenProducto1.png" class="img-fluid imagenRecursos" data-aos="fade-up"alt="producto">
+            <div class="col col-12 col-lg-6 col-md-12 col-sm-12 imagen__recursos"> 
+                <img src="media/imagenProducto1.png" class="img-fluid imagen__recursos" data-aos="fade-up" data-aos-duration="1500" data-aos-once="true" alt="producto">
             </div>
-            <div class="col col-12 col-lg-6 col-md-12 col-sm-12 videoRecursos embed-responsive embed-responsive-16by9" >
-                <iframe class="embed-responsive-item" width="560" height="315" src="https://www.youtube.com/embed/Ycs7gq_fRcA" title="YouTube video player" data-aos="fade-up" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <div class="col col-12 col-lg-6 col-md-12 col-sm-12 video__recursos embed-responsive embed-responsive-16by9" >
+                <iframe class="embed-responsive-item" width="560" height="315" src="https://www.youtube.com/embed/Ycs7gq_fRcA" title="YouTube video player" data-aos="fade-up" data-aos-duration="1500" data-aos-once="true" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
         </div>
 
         <!-- seccion testimonios -->
-        <div class="row tituloTestimonios">
+        <div class="row titulo__testimonios">
             <div class="col col-12 col-lg-12 col-md-12 col-sm-12 testimonios"> 
                 <h3 class="animate__animated animate__headShake animate__delay-1s animate__infinite">Lo que dicen de nosotros</h3>
             </div>
@@ -76,18 +76,18 @@
         <div class="row testimonios">
             <div class="col col-12 col-lg-4 col-md-4 col-sm-12 testimonio1"> 
                 <img src="media/testimonio1.png" class="img-fluid" alt="testimonio1">
-                <p data-aos="fade-up">"Me he ahorrado mucho tiempo en crear mis propios recursos. Esta herramienta es increible".</p>
-                <p data-aos="fade-up" class="nombreTesti"><b>Sergio Cruz</b></p>
+                <p data-aos="fade-up" data-aos-duration="2500" data-aos-once="true">"Me he ahorrado mucho tiempo en crear mis propios recursos. Esta herramienta es increible".</p>
+                <p data-aos="fade-up" data-aos-once="true" data-aos-duration="2500" class="nombre__testi"><b>Sergio Cruz</b></p>
             </div>
             <div class="col col-12 col-lg-4 col-md-4 col-sm-12 testimono2"> 
                 <img src="media/testimonio2.png" class="img-fluid" alt="testimonio2">
-                <p data-aos="fade-up"> "No podria estar mas feliz. Tengo ahora mas tiempo para dedicarme a otras areas de mi trabajo que son mas demandantes".</p>
-                <p data-aos="fade-up" class="nombreTesti2"><b>Celia Ramos</b></p>
+                <p data-aos="fade-up" data-aos-duration="2500" data-aos-once="true"> "No podria estar mas feliz. Tengo ahora mas tiempo para dedicarme a otras areas de mi trabajo que son mas demandantes".</p>
+                <p data-aos="fade-up" data-aos-once="true" data-aos-duration="2500" class="nombre__testi2"><b>Celia Ramos</b></p>
             </div>
             <div class="col col-12 col-lg-4 col-md-12 col-sm-12 testimonio3"> 
                 <img src="media/testimonio3.png" class="img-fluid imagenTesti3" alt="testimonio3">
-                <p data-aos="fade-up"> "Simplemente lo que necesitaba".</p>
-                <p data-aos="fade-up" class="nombreTesti"><b>Margaret Williams</b></p>
+                <p data-aos="fade-up" data-aos-duration="2500"  data-aos-once="true"> "Simplemente lo que necesitaba".</p>
+                <p data-aos="fade-up" data-aos-duration="2500" data-aos-once="true" class="nombre__testi"><b>Margaret Williams</b></p>
             </div>
         </div>
 
@@ -95,15 +95,15 @@
         <div class="row">
             <div class="col col-12 col-lg-12 col-md-12 col-sm-12 esquema">
                 <h4 class="animate__animated animate__headShake animate__delay-1s animate__infinite">PLANES DE PAGO</h4>
-                <div class="tablaGrid">
-                    <h4 class="planPago1 gridItem">STANDARD</h4>
-                    <h4 class="planPago2 gridItem">PREMIUM</h4>
-                    <h4 class="planPago3 gridItem">MASTER</h4>
-                    <p class="precio1 gridItem">$20 USD / AÑO</p>
-                    <p class="precio2 gridItem">$20 USD / AÑO</p>
-                    <p class="precio3 gridItem">$20 USD / AÑO</p>
-                    <p class="beneficio1 gridItem">RECURSOS</p>
-                    <p class="beneficio2 gridItem">RECURSOS + ATENCION 24 HORAS</p>
+                <div class="tabla__grid">
+                    <h4 class="plan__pago1 grid__item">STANDARD</h4>
+                    <h4 class="plan__pago2 grid__item">PREMIUM</h4>
+                    <h4 class="plan__pago3 grid__item">MASTER</h4>
+                    <p class="precio1 grid__item">$20 USD / AÑO</p>
+                    <p class="precio2 grid__item">$20 USD / AÑO</p>
+                    <p class="precio3 grid__item">$20 USD / AÑO</p>
+                    <p class="beneficio1 grid__item">RECURSOS</p>
+                    <p class="beneficio2 grid__item">RECURSOS + ATENCION 24 HORAS</p>
                     <p class="beneficio3 gridItem">RECURSOS + ATENCION 24 HORAS + LIVE WEBINARS</p>
                 </div>
             </div>
@@ -112,7 +112,7 @@
     <!-- footer -->
     <footer>
         <div class="row ">
-            <div class="col footNav">
+            <div class="col foot__nav">
                 <ul>
                     <li><a href="index.html">Home</a></li>
                     <li><a href="html/subscripcion.html">Subscripcion</a></li>
@@ -120,7 +120,7 @@
                     <li><a href="html/sobreNosotros.html">Sobre nosotros</a></li>
                     <li><a href="html/contacto.html">Contacto</a></li>
                 </ul>
-                <div class="redesSociales">
+                <div class="redes__sociales">
                     <a href="#"><img src="media/facebook.png" alt="facebook"></a>
                     <a href="#"><img src="media/instagram.png" alt="instagram"></a>
                     <a href="#"><img src="media/tiktok.png" alt="tiktok"></a>
