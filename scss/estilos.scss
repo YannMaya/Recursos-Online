@@ -1,3 +1,4 @@
+@import "variables";
 html,
 body {
     max-width: 100% !important;
@@ -26,30 +27,29 @@ body {
 }
 
 /* seccion principal */
-.texto__principal {
-    background-color: rgb(255, 64, 51);
+.seccion__principal {
+    background-color: $primary_color;
 }
 
-.background__titulo {
-    background-color: rgb(255, 64, 51);
+.main__principal {
+    background-color: $primary_color;
 }
 
 h1 {
     grid-area: titulo;
     text-align: center;
-    font-size: 7rem;
+    font-size: $font-title;
     padding-top: 30px;
 }
 
 .imagen__principal {
-    background-color: rgb(255, 64, 51);
+    background-color: $primary_color;
     text-align: center;
 }
 
 .texto__principal p {
-    background-color: rgb(255, 64, 51);
     font-size: 2.3rem;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family: $font_family;
     padding: 70px 20px 0 20px;
     text-align: center;
 }
@@ -65,7 +65,7 @@ h1 {
     align-content: center;
     justify-items: center;
     text-align: center;
-    background-color: rgb(255, 198, 4);
+    background-color: $tertiary_color;
     padding: 20px 0 30px 0;
 }
 
@@ -75,7 +75,7 @@ h1 {
 }
 
 .imagen__recursos {
-    background-color: rgb(255, 198, 4);
+    background-color: $tertiary_color;
     text-align: center;
     padding-bottom: 25px;
 }
@@ -96,7 +96,7 @@ h1 {
 }
 
 .video__recursos {
-    background-color: rgb(255, 198, 4);
+    background-color: $tertiary_color;
 }
 
 iframe {
@@ -172,7 +172,7 @@ iframe {
 
 /* =====seccion para los esquemas de pago==== */
 .esquema {
-    background-color: rgb(82, 144, 201);
+    background-color: $secondary_color;
     height: 420px;
 }
 
@@ -260,7 +260,7 @@ h4 {
 /* media querie para la seccion de pagos */
 @media only screen and (max-width: 480px) {
     .esquema {
-        background-color: rgb(82, 144, 201);
+        background-color: $secondary_color;
         height: 400px;
     }
 
@@ -276,7 +276,7 @@ h4 {
 
 @media only screen and (min-width: 481px) and (max-width: 978px) {
     .esquema {
-        background-color: rgb(82, 144, 201);
+        background-color: $secondary_color;
         height: 400px;
     }
 
@@ -420,7 +420,7 @@ footer a {
 
 /* ======================= pagina de contacto ==================*/
 .contenedor__contacto {
-    background-color: rgb(104, 182, 255);
+    background-color: $secondary_color;
 }
 
 .titulo__formulario {
@@ -547,7 +547,7 @@ footer a {
 
 /* pagina de subscripcion */
 .contenedor__formulario {
-    background-color: rgb(255, 64, 51);
+    background-color: $primary_color;
     color: azure;
 }
 
