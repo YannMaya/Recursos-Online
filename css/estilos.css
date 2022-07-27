@@ -26,9 +26,6 @@
     text-align: center; }
 
 /* seccion para productos */
-.productos div h2:hover {
-  transform: scale(1.2); }
-
 .recursos__subtitulo {
   justify-content: center;
   align-items: center;
@@ -40,6 +37,8 @@
   .recursos__subtitulo h2 {
     font-size: 3rem;
     padding: 10px; }
+    .recursos__subtitulo h2:hover {
+      transform: scale(1.2); }
 
 .recursos__imagen {
   background-color: #ffc604;

@@ -34,10 +34,6 @@
 }
 
 /* seccion para productos */
-.productos div h2:hover {
-    transform: scale(1.2);
-}
-
 .recursos__subtitulo {
     justify-content: center;
     align-items: center;
@@ -50,6 +46,9 @@
     & h2 {
         font-size: 3rem;
         padding: 10px;
+        &:hover{
+            transform: scale(1.2);
+        }
     }
 }
 
@@ -70,14 +69,17 @@
     text-align: center;
 }
 
-.recursos__video iframe {
+.recursos__video {
+    iframe{
     height: 400px;
     padding-top: 40px;
     align-items: center;
     justify-content: center;
     justify-items: center;
     vertical-align: middle;
+    }
 }
+
 
 /* seccion para los testimonios */
 .testimonios__titulo {
@@ -97,31 +99,31 @@
     text-align: center;
     .testimonio{
         margin-bottom: 15px;
-            padding: 25px;
-            margin-top: 20px;
-            &__imagen{
-                padding: 0 0 20px 0;
-                height: 330px;
-                width: 330px;
-                margin-top: 1px;
-                &:hover {
-                    transform: scale(1.1, 1.1);
-                }    
-            }
-            &__texto{
-                justify-content: center;
-                justify-items: center;
-                text-align: center;
-                font-size: 1.2rem;
-            }
-            &__nombre {
-                font-size: 1.4rem;
-                margin-top: -10px;
-                justify-content: center;
-                justify-items: center;
-                text-align: center;
-            }
-        }    
+        padding: 25px;
+        margin-top: 20px;
+        &__imagen{
+            padding: 0 0 20px 0;
+            height: 330px;
+            width: 330px;
+            margin-top: 1px;
+            &:hover {
+                transform: scale(1.1, 1.1);
+            }    
+        }
+        &__texto{
+            justify-content: center;
+            justify-items: center;
+            text-align: center;
+            font-size: 1.2rem;
+        }
+        &__nombre {
+            font-size: 1.4rem;
+            margin-top: -10px;
+            justify-content: center;
+            justify-items: center;
+            text-align: center;
+        }
+    }    
 }
 
 /* =====seccion para los esquemas de pago==== */
