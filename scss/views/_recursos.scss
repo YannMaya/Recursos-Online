@@ -1,0 +1,42 @@
+/* =======pagina de recursos====== */
+.recurso {
+    text-align: center;
+}
+
+.recursos1,
+.recursos2 {
+    padding: 50px 0 30px 0;
+}
+
+.descripcion__recursos {
+    p{
+    font-size: 2rem;
+    line-height: 3rem;
+    padding: 20px 50px 20px 50px;
+    text-align: center;
+    }
+}
+
+.carousel-caption {
+    h5{
+    font-size: 6rem;
+    }
+}
+
+#carouselExampleCaptions .carousel-item:before {
+    content: "";
+    background-image: linear-gradient(to bottom, transparent, rgba(41, 14, 14, 0.5));
+    display: block;
+    position: absolute;
+    top: 0;
+    width: 100vw;
+    height: 100vw;
+}
+
+.color__boton {
+    background-color: whitesmoke;
+}
+
+.card-img-top {
+    padding: 20px;
+}

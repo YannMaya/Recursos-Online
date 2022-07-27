@@ -1,0 +1,205 @@
+/* seccion principal */
+.principal__titulo {
+    background-color: $primary_color;
+
+    &__modificador{
+        background-color: $primary_color;
+
+        h1{
+            grid-area: titulo;
+            text-align: center;
+            font-size: $font-title;
+            padding-top: 30px;
+        }
+    }
+}
+
+
+.main {
+    background-color: $primary_color;
+
+    &__texto {
+        p{
+        font-size: 2.3rem;
+        font-family: $font_family;
+        padding: 70px 20px 0 20px;
+        text-align: center;
+        }
+    }
+
+    &__imagen {
+        background-color: $primary_color;
+        text-align: center;
+    }
+}
+
+/* seccion para productos */
+.productos div h2:hover {
+    transform: scale(1.2);
+}
+
+.recursos__subtitulo {
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    justify-items: center;
+    text-align: center;
+    background-color: $tertiary_color;
+    padding: 20px 0 30px 0;
+
+    & h2 {
+        font-size: 3rem;
+        padding: 10px;
+    }
+}
+
+.recursos__imagen {
+    background-color: $tertiary_color;
+    text-align: center;
+    padding-bottom: 25px;
+
+    & img:hover {
+        border: solid 4px salmon;
+    }
+}
+
+.recursos__video {
+    padding-bottom: 33px;
+    padding-right: 35px;
+    background-color: $tertiary_color;
+    text-align: center;
+}
+
+.recursos__video iframe {
+    height: 400px;
+    padding-top: 40px;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+    vertical-align: middle;
+}
+
+/* seccion para los testimonios */
+.testimonios__titulo {
+    align-items: center;
+    text-align: center;
+    padding-top: 20px;
+    h3 {
+        align-items: center;
+        text-align: center;
+        font-size: 3rem;
+    }
+}
+
+.testimonios {
+    justify-content: center;
+    justify-items: center;
+    text-align: center;
+    .testimonio{
+        margin-bottom: 15px;
+            padding: 25px;
+            margin-top: 20px;
+            &__imagen{
+                padding: 0 0 20px 0;
+                height: 330px;
+                width: 330px;
+                margin-top: 1px;
+                &:hover {
+                    transform: scale(1.1, 1.1);
+                }    
+            }
+            &__texto{
+                justify-content: center;
+                justify-items: center;
+                text-align: center;
+                font-size: 1.2rem;
+            }
+            &__nombre {
+                font-size: 1.4rem;
+                margin-top: -10px;
+                justify-content: center;
+                justify-items: center;
+                text-align: center;
+            }
+        }    
+}
+
+/* =====seccion para los esquemas de pago==== */
+.esquema {
+    background-color: $secondary_color;
+    height: 420px;
+    h4 {
+        font-size: 2.7rem;
+        padding: 20px;
+        text-align: center;
+    }
+}
+
+.tabla__grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+        "plan1   plan2    plan3"
+        "precio1 precio2 precio3"
+        "bene1  bene2  bene3";
+    justify-items: center;
+    align-items: center;
+    border: solid black 5px;
+    text-align: center;
+    background-color: whitesmoke;
+    width: 99%;
+    box-sizing: border-box;
+    p {
+        font-size: 1.2rem;
+    }
+}
+
+.plan__pago1 {
+    grid-area: "plan1";
+    font-size: 2rem;
+    &:hover {
+        transform: scale(1.3);
+    }
+}
+
+.plan__pago2 {
+    grid-area: "plan2";
+    font-size: 2rem;
+    &:hover {
+        transform: scale(1.3);
+    }
+}
+
+
+.plan__pago3 {
+    grid-area: "plan3";
+    font-size: 2rem;
+    &:hover {
+        transform: scale(1.3);
+    }
+}
+
+.precio1 {
+    grid-area: "precio1";
+}
+
+.precio2 {
+    grid-area: "precio2";
+}
+
+.precio3 {
+    grid-area: "precio3";
+}
+
+.beneficio1 {
+    grid-area: "bene1";
+}
+
+.beneficio2 {
+    grid-area: "bene2";
+}
+
+.beneficio3 {
+    grid-area: "bene3";
+}

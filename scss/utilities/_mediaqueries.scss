@@ -1,0 +1,215 @@
+/* =============PAGINA DE HOME=============== */
+@media only screen and (max-width: 575) {
+    h1{
+        font-size: 3rem;
+    }
+    
+    .recursos__imagen {
+        padding: 70px 20px 0 20px;
+    }
+    
+    .recursos__video {
+        iframe{
+        width: 80%;
+        }
+    }
+}
+
+@media only screen and (min-width:768px) and (max-width:992px) {
+    .testimonios  {
+        img{
+        height: 256px;
+        width: 266px;
+        padding: 5px;
+        }
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .testimonios {
+        img{
+        height: 210px;
+        width: 200px;
+    }
+}
+}
+
+/* media querie para la seccion de pagos */
+@media only screen and (max-width: 480px) {
+    .esquema {
+        background-color: $secondary_color;
+        height: 400px;
+    }
+
+    .grid__item {
+        width: auto;
+        font-size: 1rem;
+    }
+
+    .tabla__grid {
+            
+            h4, p{
+                font-size: 1.1rem;
+            }   
+    }
+}
+
+@media only screen and (min-width: 481px) and (max-width: 978px) {
+    .esquema {
+        background-color: $secondary_color;
+        height: 400px;
+    }
+
+    .grid__item {
+        width: auto;
+        font-size: 18px;
+    }
+
+    .tabla__grid {
+            
+        h4, p{
+            font-size: 1.1rem;
+        }   
+}
+}
+
+/* media querie para el footer */
+@media only screen and (min-width: 979px) {
+    .footer__nav {
+        ul{
+        width: 100%;
+        }
+    }
+}
+
+@media only screen and (min-width: 979px) {
+    .footer__nav {
+        ul{
+        width: 100%;
+        margin: 15px;
+        }
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .footer__nav {
+        .redesSociales{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        }
+        ul {
+        width: 100%;
+        }
+    }
+}
+
+/*=========pagina de subscripcion============= */
+@media only screen and (max-width:576px) {
+    .titulo__central {
+        font-size: 2rem;
+    }
+}
+
+/* ======pagina de recursos========= */
+@media only screen and (max-width:576px){
+    .descripcion__recursos {
+        p{
+        font-size: 1.2rem;
+        line-height: 2rem;
+        padding: 10px 20px 10px 20px;
+        text-align: center;
+        }
+    }
+}
+
+@media only screen and (max-width:768px) {
+    .carousel-caption {
+        h5 {
+        font-size: 4rem;
+    }
+    }
+}
+
+/* ====pagina sobre nosotros ======= */
+@media only screen and (max-width:576px){
+    .espacio__video {
+        iframe{
+        padding-right: 25px;
+        padding-left: 25px;
+        text-align: center;
+        align-items: center;
+        }
+    }
+}
+
+@media only screen and (min-width:577px) and (max-width:992px) {
+    .espacio__video {
+        iframe{
+        padding-right: 45px;
+        padding-left: 45px;
+        text-align: center;
+        align-items: center;
+        }
+    }
+}
+
+@media only screen and (min-width:993px) {
+    .espacio__video {
+        iframe {
+        padding-right: 120px;
+        padding-left: 130px;
+        width: 90%;
+        text-align: center;
+        align-items: center;
+        }
+    }
+}
+
+@media only screen and (max-width:576px) {
+    .valores__empresa {
+        padding: 20px 30px 20px 30px;
+    }
+
+    .valores__empresa {
+        h3{
+        padding: 20px 30px 20px 30px;
+        }
+    }
+
+    .texto__empresa {
+        font-size: 2rem;
+        padding: 20px 30px 40px 30px;
+        text-align: center;
+        justify-content: center;
+    }
+
+    .trabajador {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media only screen and (min-width:577px) and (max-width:992px) {
+    .valores__empresa {
+        padding: 20px 30px 20px 30px;
+    }
+
+    .valores__empresa {
+        h3{
+        padding: 20px 30px 20px 30px;
+        }
+    }
+    
+    .texto__empresa {
+        font-size: 2rem;
+        padding: 20px 30px 40px 30px;
+        text-align: center;
+        justify-content: center;
+    }
+
+    .trabajador {
+        display: flex;
+        flex-direction: column;
+    }
+}
