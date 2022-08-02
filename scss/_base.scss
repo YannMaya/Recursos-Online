@@ -1,10 +1,9 @@
 html,
 body {
-    max-width: 100% !important;
-    overflow-x: hidden !important;
+    max-width: 100%;
+    overflow-x: hidden;
 }
 
 h1{
     text-align: $text-align;
-    font-size: $font-title;
 }

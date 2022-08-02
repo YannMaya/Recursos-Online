@@ -1,0 +1,33 @@
+@mixin flex ($wrap, $justify, $align) {
+    display: flex;
+    flex-wrap: $wrap;
+    justify-content: $justify;
+    align-self: $align;
+}
+
+/* MAPS */
+$colors:(
+    rapidos: rgb(116, 48, 249),
+    eficiente: rgb(250, 208, 0),
+    pasion: rgb(231, 179, 255)
+);
+
+@each $name, $color in $colors {
+    .#{$name} {
+        color: $color;
+    }
+} 
+
+$font-sizes: (
+    h1: 7rem,
+    h2: 6rem,
+    h3: 5rem,
+    h4: 4rem,
+    h5: 3rem,
+);
+
+@each $tag, $size in $font-sizes {
+    #{$tag} {
+        font-size: $size;
+    }
+}
