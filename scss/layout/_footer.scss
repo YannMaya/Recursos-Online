@@ -10,7 +10,6 @@ footer {
 .foot__nav {
     background: rgb(1, 16, 94);
     background: linear-gradient(90deg, rgba(1, 16, 94, 1) 0%, rgba(148, 32, 90, 1) 79%, rgba(255, 44, 87, 1) 100%);
-    ;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -26,19 +25,20 @@ footer {
             text-decoration: none;
         }
     }
-    .redes__sociales {
-        display: flex;
-        display: inline;
-        @include flex (wrap, center, center);
-        img {
-            height: 200px;
-            width: 200px;
-            padding: 35px; 
-            &:hover {
-                transform: scale(1.3);
+}
+
+.redes__sociales {
+    display: flex;
+    display: inline;
+    @include flex (wrap, center, center);
+    img {
+        height: 200px;
+        width: 200px;
+        padding: 35px; 
+        &:hover {
+            transform: scale(1.3);
             }
         }
-    }
     p {
         color: aliceblue
     }   
