@@ -4,6 +4,13 @@
         font-size: 3rem;
     }
     
+    .btn-lg{
+        --bs-btn-padding-y: 1.2rem; 
+        --bs-btn-padding-x: 2.5rem; 
+        --bs-btn-font-size: 2rem;
+
+    }
+
     .recursos__imagen {
         padding: 70px 20px 0 20px;
     }
@@ -15,20 +22,93 @@
     }
 }
 
-@media only screen and (min-width:993px){
+@media only screen and (min-width:577px) and (max-width:993px){
+    .main {
+            padding: 50px 20px 30px 30px;
+        }
+    }
+
+@media only screen and (min-width:994px) and (max-width:1200px){
+    .main {
+            padding: 50px 20px 30px 30px;
+    }
+}
+
+@media only screen and (min-width:320px) and (max-width:576px){
     .main {
         &__texto {
-            padding: 50px 20px 20px 30px;
+            p{
+                padding: 5px 10px 5px 10px;
+                font-size: 2rem;
+                line-height: 3rem;
+            }
+        }
+    }
+
+/* seccion de nuestros productos */
+    .recursos__video{
+        padding: 20px 0 20px 0;
+        iframe{
+            height: 270px;
+            padding-left: 0;
+        }
+    }
+
+    .descripcion__productos{
+        background-color: $tertiary_color;
+        text-align: center;
+        p{
+            padding: 20px 40px 36px 40px;
+            font-size: 1.9rem;
+        }
+    }
+
+/* seccion de testimonios */
+    .testimonios__titulo{
+        h3{
+            font-size: 3rem;
+        }
+    }
+
+    .recursos__subtitulo{
+        h2{
+            font-weight: bold;
+        }
+    }
+
+
+    .esquema{
+        h4{
+            font-size: 3.1rem;
         }
     }
 }
 
+@media only screen and (min-width: 577px) and (max-width:767px){
+    .recursos__video{
+        padding-right: 0;
+    }
+    .testimonios{
+        .testimonio__texto{
+        font-size: 1.9rem;
+        }
+    }
+}
+    
 @media only screen and (min-width:768px) and (max-width:992px) {
     .testimonios  {
         img{
-        height: 256px;
+        height: 656px;
         width: 266px;
         padding: 5px;
+        }
+    }
+
+    .recursos__video{
+        padding: 20px 0 20px 0;
+        iframe{
+            height: 420px;
+            padding-left: 0;
         }
     }
 }
@@ -99,6 +179,7 @@
         }   
     }
 }
+
 
 @media only screen and (min-width: 979px) {
     .esquema {
@@ -179,7 +260,19 @@
 
 
 /* ======pagina de recursos========= */
-@media only screen and (max-width:576px){
+@media only screen and (min-width:320px) and (max-width:575px){
+    .descripcion__recursos{
+        p{
+            font-size: 1.6rem;
+        }
+    }
+
+    .recursos2{
+        padding-top: 0;
+    }
+}
+
+@media only screen and (min-width:576px) and (max-width:992px){
     .descripcion__recursos {
         p{
         font-size: 1.2rem;
@@ -187,6 +280,19 @@
         padding: 10px 20px 10px 20px;
         text-align: center;
         }
+    }
+
+    .bi-arrow-right-circle-fill, .bi-arrow-left-circle-fill{
+        height: 20px;
+        width: 20px;
+    }
+
+    .recursos2, .recursos1{
+        padding: 50px 0 0 0;
+    }
+
+    .recurso{
+        padding-bottom: 20px;
     }
 }
 
@@ -200,6 +306,7 @@
 
 /* ====pagina sobre nosotros ======= */
 @media only screen and (min-width:320px) and (max-width:576px){
+    
     .titulo__central{
         font-size: 3rem;
     }
@@ -212,6 +319,19 @@
                 text-align: center;
                 align-items: center;
                 box-sizing: border-box;
+        }
+    }
+
+    .nuestra__mision{
+        font-size: 2.4rem;
+    }
+
+    .valores__empresa{
+        h3{
+            font-size: 2.6rem;
+        }
+        .texto__empresa{
+            font-size: 1.6rem;
         }
     }
 }
@@ -244,10 +364,12 @@
 
 @media only screen and (min-width:1201px){
     .espacio__video {
+        padding-left: 20px;
         iframe {
             padding-right: 0px;
             padding-left: 0px;
-            width: 1000px;
+            height: 500px;
+            width: 800px;
             text-align: center;
             align-items: center;
         }

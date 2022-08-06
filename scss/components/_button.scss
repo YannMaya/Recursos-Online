@@ -2,3 +2,17 @@
     background-color: rebeccapurple;
     font-size: 1.3rem;
 }
+
+.btn-warning{
+    background-color: orange;
+    --bs-btn-padding-y: 1.4rem; 
+    --bs-btn-padding-x: 3rem; 
+    --bs-btn-font-size: 2rem;
+}
+
+.boton__recursos{
+    background-color: white;
+    --bs-btn-padding-y: .4rem; 
+    --bs-btn-padding-x: .7rem; 
+    --bs-btn-font-size: 1.4rem;
+}

@@ -5,7 +5,7 @@
 
 .recursos1,
 .recursos2 {
-    padding: 50px 0 30px 0;
+    padding: 50px 0 0 0;
 }
 
 .descripcion__recursos {
@@ -33,14 +33,26 @@
     height: 100vw;
 }
 
+.card-img-top{
+    padding: 20px;
+    background-color: $secondary_color;
+}
+
+.card-body{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: $secondary_color;
+}
+
 .card-title{
     font-size: 3rem;
+    color: white;
 }
 
-.color__boton {
-    background-color: whitesmoke;
+.card-text{
+    font-size: 1.4rem;
+    justify-content: flex-start;
+    color: white;
 }
 
-.card-img-top {
-    padding: 20px;
-}

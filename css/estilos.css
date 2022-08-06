@@ -29,6 +29,18 @@ h5 {
   background-color: rebeccapurple;
   font-size: 1.3rem; }
 
+.btn-warning {
+  background-color: orange;
+  --bs-btn-padding-y: 1.4rem;
+  --bs-btn-padding-x: 3rem;
+  --bs-btn-font-size: 2rem; }
+
+.boton__recursos {
+  background-color: white;
+  --bs-btn-padding-y: .4rem;
+  --bs-btn-padding-x: .7rem;
+  --bs-btn-font-size: 1.4rem; }
+
 /* seccion principal */
 .principal__titulo {
   background-color: #ff4033; }
@@ -42,16 +54,20 @@ h5 {
 .main {
   background-color: #ff4033; }
   .main__texto {
-    padding-top: 20px; }
+    padding-top: 20px;
+    align-items: center;
+    text-align: center; }
     .main__texto p {
-      font-size: 2.5rem;
+      font-size: 2.2rem;
       font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-      padding: 30px 20px 20px 50px;
+      padding: 50px 20px 20px 50px;
       text-align: center;
       line-height: 5rem; }
   .main__imagen {
     background-color: #ff4033;
     text-align: center; }
+  .main .btn-warning {
+    margin-top: 20px; }
 
 /* seccion para productos */
 .recursos__subtitulo {
@@ -76,8 +92,7 @@ h5 {
     border: solid 4px salmon; }
 
 .recursos__video {
-  padding-bottom: 33px;
-  padding-right: 35px; }
+  padding: 40px 35px 33px 0; }
 
 .recursos__video iframe {
   height: 400px;
@@ -86,6 +101,13 @@ h5 {
   justify-content: center;
   justify-items: center;
   vertical-align: middle; }
+
+.descripcion__productos {
+  background-color: #ffc604;
+  text-align: center; }
+  .descripcion__productos p {
+    padding: 20px 60px 36px 60px;
+    font-size: 2.3rem; }
 
 /* seccion para los testimonios */
 .testimonios__titulo {
@@ -115,9 +137,9 @@ h5 {
       justify-content: center;
       justify-items: center;
       text-align: center;
-      font-size: 1.2rem; }
+      font-size: 1.5rem; }
     .testimonios .testimonio__nombre {
-      font-size: 1.4rem;
+      font-size: 1.7rem;
       margin-top: -10px;
       justify-content: center;
       justify-items: center;
@@ -206,7 +228,7 @@ h5 {
 
 .recursos1,
 .recursos2 {
-  padding: 50px 0 30px 0; }
+  padding: 50px 0 0 0; }
 
 .descripcion__recursos p {
   font-size: 2rem;
@@ -226,14 +248,24 @@ h5 {
   width: 100vw;
   height: 100vw; }
 
-.card-title {
-  font-size: 3rem; }
-
-.color__boton {
-  background-color: whitesmoke; }
-
 .card-img-top {
-  padding: 20px; }
+  padding: 20px;
+  background-color: #5290c9; }
+
+.card-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: #5290c9; }
+
+.card-title {
+  font-size: 3rem;
+  color: white; }
+
+.card-text {
+  font-size: 1.4rem;
+  justify-content: flex-start;
+  color: white; }
 
 /* ======pagina sobre nosotros=========== */
 .sobreNosotros__titulo {
@@ -278,7 +310,7 @@ h5 {
 
 /* ======================= pagina de contacto ==================*/
 .contenedor__contacto {
-  background-color: #4bc7e0;
+  background-color: #5290c9;
   font-size: 1.5rem; }
 
 .formulario__titulo {
@@ -310,6 +342,8 @@ footer a {
     padding: 15px 0 0 15px; }
     .foot__nav ul a {
       text-decoration: none; }
+  .foot__nav p {
+    color: aliceblue; }
 
 .redes__sociales {
   display: flex;
@@ -319,13 +353,11 @@ footer a {
   justify-content: center;
   align-self: center; }
   .redes__sociales img {
-    height: 200px;
-    width: 200px;
+    height: 150px;
+    width: 150px;
     padding: 35px; }
     .redes__sociales img:hover {
       transform: scale(1.3); }
-  .redes__sociales p {
-    color: aliceblue; }
 
 /*esta carperta de layout es solo para estructuras que se repiten -- flex-grid*/
 /* barra de navegacion  */
@@ -357,20 +389,64 @@ h1 {
 @media only screen and (max-width: 575) {
   h1 {
     font-size: 3rem; }
+  .btn-lg {
+    --bs-btn-padding-y: 1.2rem;
+    --bs-btn-padding-x: 2.5rem;
+    --bs-btn-font-size: 2rem; }
   .recursos__imagen, .recursos__video {
     padding: 70px 20px 0 20px; }
   .recursos__video iframe {
     width: 80%; } }
 
-@media only screen and (min-width: 993px) {
-  .main__texto {
-    padding: 50px 20px 20px 30px; } }
+@media only screen and (min-width: 577px) and (max-width: 993px) {
+  .main {
+    padding: 50px 20px 30px 30px; } }
+
+@media only screen and (min-width: 994px) and (max-width: 1200px) {
+  .main {
+    padding: 50px 20px 30px 30px; } }
+
+@media only screen and (min-width: 320px) and (max-width: 576px) {
+  .main__texto p {
+    padding: 5px 10px 5px 10px;
+    font-size: 2rem;
+    line-height: 3rem; }
+  /* seccion de nuestros productos */
+  .recursos__video {
+    padding: 20px 0 20px 0; }
+    .recursos__video iframe {
+      height: 270px;
+      padding-left: 0; }
+  .descripcion__productos {
+    background-color: #ffc604;
+    text-align: center; }
+    .descripcion__productos p {
+      padding: 20px 40px 36px 40px;
+      font-size: 1.9rem; }
+  /* seccion de testimonios */
+  .testimonios__titulo h3 {
+    font-size: 3rem; }
+  .recursos__subtitulo h2 {
+    font-weight: bold; }
+  .esquema h4 {
+    font-size: 3.1rem; } }
+
+@media only screen and (min-width: 577px) and (max-width: 767px) {
+  .recursos__video {
+    padding-right: 0; }
+  .testimonios .testimonio__texto {
+    font-size: 1.9rem; } }
 
 @media only screen and (min-width: 768px) and (max-width: 992px) {
   .testimonios img {
-    height: 256px;
+    height: 656px;
     width: 266px;
-    padding: 5px; } }
+    padding: 5px; }
+  .recursos__video {
+    padding: 20px 0 20px 0; }
+    .recursos__video iframe {
+      height: 420px;
+      padding-left: 0; } }
 
 @media only screen and (max-width: 767px) {
   .testimonios img {
@@ -461,12 +537,25 @@ h1 {
     font-size: 2rem; } }
 
 /* ======pagina de recursos========= */
-@media only screen and (max-width: 576px) {
+@media only screen and (min-width: 320px) and (max-width: 575px) {
+  .descripcion__recursos p {
+    font-size: 1.6rem; }
+  .recursos2 {
+    padding-top: 0; } }
+
+@media only screen and (min-width: 576px) and (max-width: 992px) {
   .descripcion__recursos p {
     font-size: 1.2rem;
     line-height: 2rem;
     padding: 10px 20px 10px 20px;
-    text-align: center; } }
+    text-align: center; }
+  .bi-arrow-right-circle-fill, .bi-arrow-left-circle-fill {
+    height: 20px;
+    width: 20px; }
+  .recursos2, .recursos1 {
+    padding: 50px 0 0 0; }
+  .recurso {
+    padding-bottom: 20px; } }
 
 @media only screen and (max-width: 768px) {
   .carousel-caption h5 {
@@ -482,7 +571,13 @@ h1 {
     width: 350px;
     text-align: center;
     align-items: center;
-    box-sizing: border-box; } }
+    box-sizing: border-box; }
+  .nuestra__mision {
+    font-size: 2.4rem; }
+  .valores__empresa h3 {
+    font-size: 2.6rem; }
+  .valores__empresa .texto__empresa {
+    font-size: 1.6rem; } }
 
 @media only screen and (min-width: 577px) and (max-width: 992px) {
   .espacio__video iframe {
@@ -503,12 +598,15 @@ h1 {
     align-items: center; } }
 
 @media only screen and (min-width: 1201px) {
-  .espacio__video iframe {
-    padding-right: 0px;
-    padding-left: 0px;
-    width: 1000px;
-    text-align: center;
-    align-items: center; } }
+  .espacio__video {
+    padding-left: 20px; }
+    .espacio__video iframe {
+      padding-right: 0px;
+      padding-left: 0px;
+      height: 500px;
+      width: 800px;
+      text-align: center;
+      align-items: center; } }
 
 @media only screen and (max-width: 576px) {
   .valores__empresa {

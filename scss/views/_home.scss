@@ -17,10 +17,12 @@
     background-color: $primary_color;
     &__texto {
         padding-top: 20px;
+        align-items: center;
+        text-align: center;
         p{
-        font-size: 2.5rem;
+        font-size: 2.2rem;
         font-family: $font_family;
-        padding: 30px 20px 20px 50px;
+        padding: 50px 20px 20px 50px;
         text-align: center;
         line-height: 5rem;
         }
@@ -30,7 +32,11 @@
         background-color: $primary_color;
         text-align: center;
     }
+    .btn-warning{
+        margin-top: 20px;
+    }
 }
+
 
 /* seccion para productos */
 .recursos__subtitulo {
@@ -63,8 +69,7 @@
 
 .recursos__video {
     @extend .recursos__imagen;
-    padding-bottom: 33px;
-    padding-right: 35px;
+    padding: 40px 35px 33px 0;
 }
 
 .recursos__video {
@@ -78,6 +83,14 @@
     }
 }
 
+.descripcion__productos{
+    background-color: $tertiary_color;
+    text-align: center;
+    p{
+        padding: 20px 60px 36px 60px;
+        font-size: 2.3rem;
+    }
+}
 
 /* seccion para los testimonios */
 .testimonios__titulo {
@@ -111,10 +124,10 @@
             justify-content: center;
             justify-items: center;
             text-align: center;
-            font-size: 1.2rem;
+            font-size: 1.5rem;
         }
         &__nombre {
-            font-size: 1.4rem;
+            font-size: 1.7rem;
             margin-top: -10px;
             justify-content: center;
             justify-items: center;
