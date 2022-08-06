@@ -128,7 +128,7 @@ h5 {
     margin-top: 20px; }
     .testimonios .testimonio__imagen {
       padding: 0 0 20px 0;
-      height: 250px;
+      height: 260px;
       width: 250px;
       margin-top: 10px; }
       .testimonios .testimonio__imagen:hover {
@@ -386,32 +386,39 @@ h1 {
   text-align: center; }
 
 /* =============PAGINA DE HOME=============== */
-@media only screen and (max-width: 575) {
+/* area de bienvenida */
+@media only screen and (min-width: 320px) and (max-width: 575px) {
   h1 {
     font-size: 3rem; }
   .btn-lg {
     --bs-btn-padding-y: 1.2rem;
     --bs-btn-padding-x: 2.5rem;
     --bs-btn-font-size: 2rem; }
-  .recursos__imagen, .recursos__video {
-    padding: 70px 20px 0 20px; }
-  .recursos__video iframe {
-    width: 80%; } }
+  .main__texto p {
+    padding: 5px 10px 5px 10px;
+    font-size: 2rem;
+    line-height: 3rem; } }
 
-@media only screen and (min-width: 577px) and (max-width: 993px) {
+@media only screen and (min-width: 576px) and (max-width: 993px) {
   .main {
-    padding: 50px 20px 30px 30px; } }
+    padding: 30px 20px 30px 30px; }
+    .main__texto p {
+      padding: 5px 8px 5px 8px;
+      font-size: 3.5rem;
+      line-height: 4.6rem; } }
 
 @media only screen and (min-width: 994px) and (max-width: 1200px) {
   .main {
     padding: 50px 20px 30px 30px; } }
 
+/* area de recursos */
+@media only screen and (min-width: 320px) and (max-width: 575px) {
+  .recursos__imagen, .recursos__video {
+    padding: 20px 20px 0 20px; }
+  .recursos__video iframe {
+    width: 80%; } }
+
 @media only screen and (min-width: 320px) and (max-width: 576px) {
-  .main__texto p {
-    padding: 5px 10px 5px 10px;
-    font-size: 2rem;
-    line-height: 3rem; }
-  /* seccion de nuestros productos */
   .recursos__video {
     padding: 20px 0 20px 0; }
     .recursos__video iframe {
@@ -422,12 +429,16 @@ h1 {
     text-align: center; }
     .descripcion__productos p {
       padding: 20px 40px 36px 40px;
-      font-size: 1.9rem; }
-  /* seccion de testimonios */
+      font-size: 1.9rem; } }
+
+/* seccion de testimonios */
+@media only screen and (min-width: 320px) and (max-width: 576px) {
   .testimonios__titulo h3 {
     font-size: 3rem; }
   .recursos__subtitulo h2 {
     font-weight: bold; }
+  .testimonio__texto {
+    font-size: 2rem; }
   .esquema h4 {
     font-size: 3.1rem; } }
 
@@ -435,23 +446,29 @@ h1 {
   .recursos__video {
     padding-right: 0; }
   .testimonios .testimonio__texto {
-    font-size: 1.9rem; } }
+    font-size: 1.9rem; }
+  .testimonio__texto {
+    font-size: 2rem; } }
 
 @media only screen and (min-width: 768px) and (max-width: 992px) {
-  .testimonios img {
-    height: 656px;
-    width: 266px;
-    padding: 5px; }
+  .testimonios {
+    justify-content: space-evenly; }
+    .testimonios img {
+      height: 230px;
+      width: 230px;
+      padding: 5px; }
   .recursos__video {
     padding: 20px 0 20px 0; }
     .recursos__video iframe {
       height: 420px;
       padding-left: 0; } }
 
-@media only screen and (max-width: 767px) {
-  .testimonios img {
-    height: 210px;
-    width: 200px; } }
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+  .testimonios .testimonio__imagen {
+    height: 230px;
+    width: 230px; }
+  .testimonio__texto {
+    font-size: 2rem; } }
 
 /* media querie para la seccion de pagos */
 @media only screen and (min-width: 320px) and (max-width: 480px) {
@@ -489,7 +506,7 @@ h1 {
   .tabla__grid h4 {
     font-size: 1.5rem; }
   .tabla__grid .grid__item--modificador {
-    font-size: 1.2rem; } }
+    font-size: 1.4rem; } }
 
 @media only screen and (min-width: 979px) {
   .esquema {
