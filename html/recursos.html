@@ -54,7 +54,11 @@
             <p>Bienvenido a la página de descargas de nuestro sitio Recursos Online. Nuestro equipo ha estado creando planes de trabajo para llevar a cabo en línea durante muchos años. ¡Estos son algunos de los recursos reales que puedes encontrar en tus cuentas de Recursos Online! Hemos incluido material extra en muchas de nuestras categorías.
             </p>
         </div>
-        <section class="m-5">
+        <div class="input-group mb-5 mx-auto w-50">
+            <button class="btn btn-outline-secondary btn__buscar" type="button" id="button-addon1">Buscar</button>
+            <input type="text" class="form-control modificador__btn" aria-label="Example text with button addon" aria-describedby="button-addon1">
+        </div>
+        <section class="contenedorCarousel m-5">
             <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false">
                 <div class="carousel-indicators">
                     <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
@@ -99,58 +103,55 @@
             </div>
         </section>
         <!-- fila 1 de recursos -->
-        <div class="row recursos1">
-            <div class="col col-12 col-lg-4 col-md-4 col-sm-6 recurso recurso2">
-                <div class="card h-75 w-75 mx-auto mb-3 justify-content-center" data-aos="fade-up"
+        <div class="contenedor__recursos">
+            <div class="recurso1 padre__card">
+                <div class="card h-65 w-55 mx-auto mb-3 justify-content-center" data-aos="fade-up"
                     data-aos-duration="3000" data-aos-once="true">
-                    <img src="../media/recursoImagen1.png" class="card-img-top" alt="...">
+                    <img src="../media/recursoImagen1.png" class="card-img-top" alt="recurso1">
                     <div class="card-body">
                         <p class="card-title">Recurso 1<p>
-                        <p class="card-text">Recursos para profesionales de negocios</p>
+                        <p class="card-text">Profesionales de negocios</p>
                         <a href="#" class="btn boton__recursos">Mostrar</a>
                     </div>
                 </div>
             </div>
-            <div class="col col-12 col-lg-4 col-md-4 col-sm-6 recurso recurso2">
-                <div class="card h-75 w-75 mx-auto mb-3 justify-content-center" data-aos="fade-up"
+            <div class="recurso2 padre__card">
+                <div class="card h-65 w-55 mx-auto mb-3 justify-content-center" data-aos="fade-up"
                     data-aos-duration="3000" data-aos-once="true">
-                    <img src="../media/recursoImagen2.png" class="card-img-top" alt="...">
+                    <img src="../media/recursoImagen2.png" class="card-img-top" alt="recurso1">
                     <div class="card-body">
-                        <p class="card-title">Recurso 2</p>
-                        <p class="card-text">Recursos para profesionales de turismo</p>
+                        <p class="card-title">Recurso 1<p>
+                        <p class="card-text">Profesionales del turismo</p>
                         <a href="#" class="btn boton__recursos">Mostrar</a>
                     </div>
                 </div>
             </div>
-            <div class="col col-12 col-lg-4 col-md-4 col-sm-6 recurso recurso2">
-                <div class="card h-75 w-75 mx-auto mb-3 justify-content-center" data-aos="fade-up"
+            <div class="recurso3 padre__card">
+                <div class="card h-65 w-55 mx-auto mb-3 justify-content-center" data-aos="fade-up"
                     data-aos-duration="3000" data-aos-once="true">
-                    <img src="../media/recursoImagen3.png" class="card-img-top" alt="...">
+                    <img src="../media/recursoImagen3.png" class="card-img-top" alt="recurso3">
                     <div class="card-body">
                         <p class="card-title">Recurso 3</p>
-                        <p class="card-text">Recursos para profesionales del área de la salud</p>
+                        <p class="card-text">Profesionales del área de la salud</p>
                         <a href="#" class="btn boton__recursos">Mostrar</a>
                     </div>
                 </div>
             </div>
-        </div>
-        <!-- fila 2 de recursos -->
-        <div class="row recursos2">
-            <div class="col col-12 col-lg-4 col-md-4 col-sm-6 recurso recurso2">
-                <div class="card h-75 w-75 mx-auto mb-3 justify-content-center" data-aos="fade-up"
+            <div class="recurso4 padre__card">
+                <div class="card h-65 w-55 mx-auto mb-3 justify-content-center" data-aos="fade-up"
                     data-aos-duration="3000" data-aos-once="true">
-                    <img src="../media/recursoImagen4.png" class="card-img-top" alt="...">
+                    <img src="../media/recursoImagen4.png" class="card-img-top" alt="recurso4">
                     <div class="card-body">
-                        <p class="card-title">Recurso 1</p>
+                        <p class="card-title">Recurso 4</p>
                         <p class="card-text">Recursos para estudiantes</p>
                         <a href="#" class="btn boton__recursos">Mostrar</a>
                     </div>
                 </div>
             </div>
-            <div class="col col-12 col-lg-4 col-md-4 col-sm-6 recurso recurso2">
-                <div class="card h-75 w-75 mx-auto mb-3 justify-content-center" data-aos="fade-up"
+            <div class="recurso5 padre__card">
+                <div class="card h-65 w-55 mx-auto mb-3 justify-content-center" data-aos="fade-up"
                     data-aos-duration="3000" data-aos-once="true">
-                    <img src="../media/recursoImagen5.png" class="card-img-top" alt="...">
+                    <img src="../media/recursoImagen5.png" class="card-img-top" alt="recurso5">
                     <div class="card-body">
                         <p class="card-title">Recurso 2</p>
                         <p class="card-text">Recursos para ingenieros</p>
@@ -158,10 +159,10 @@
                     </div>
                 </div>
             </div>
-            <div class="col col-12 col-lg-4 col-md-4 col-sm-6 recurso recurso2">
-                <div class="card h-75 w-75 mx-auto mb-3 justify-content-center" data-aos="fade-up"
+            <div class="recurso6 padre__card">
+                <div class="card h-65 w-55 mx-auto mb-3 justify-content-center" data-aos="fade-up"
                     data-aos-duration="3000" data-aos-once="true">
-                    <img src="../media/recursoImagen6.png" class="card-img-top" alt="...">
+                    <img src="../media/recursoImagen6.png" class="card-img-top" alt="recurso6">
                     <div class="card-body">
                         <p class="card-title">Recurso 3</p>
                         <p class="card-text">Recursos para administrativos</p>

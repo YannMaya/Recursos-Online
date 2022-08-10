@@ -1,6 +1,10 @@
 .color__boton__formulario {
     background-color: rebeccapurple;
     font-size: 1.3rem;
+    &:hover{
+        background-color: $tertiary_color;
+        border: none;
+    }
 }
 
 .btn-warning{
@@ -14,6 +18,31 @@
     background-color: white;
     --bs-btn-padding-y: .4rem; 
     --bs-btn-padding-x: .7rem; 
-    --bs-btn-font-size: 1.4rem;
+    --bs-btn-font-size: 1.9rem;
 }
 
+.btn__buscar{
+    height: 40px;
+    width: 100px;
+    background-color: $secondary_color;
+    color: white;
+    font-size: 1.5rem;
+}
+
+.btn-outline-secondary:hover{
+    background-color: $tertiary_color;
+}
+
+.modificador__btn:focus{
+    box-shadow: 0 0 8px rgba(126, 65, 65, 0.6);
+
+}
+
+.color__boton__contacto {
+    background-color: rebeccapurple;
+    font-size: 1.4rem;
+    &:hover{
+        background-color: $tertiary_color;
+        border: none;
+    }
+}

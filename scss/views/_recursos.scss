@@ -17,6 +17,10 @@
     }
 }
 
+.contenedorCarousel{
+    padding-bottom: 30px;
+}
+
 .carousel-caption {
     h5{
     font-size: 6rem;
@@ -33,9 +37,26 @@
     height: 100vw;
 }
 
+.contenedor__recursos{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 10px 0 50px 0;
+}
+
+.padre__card{
+    padding: 35px 75px 50px 75px;
+}
+
+.card{
+    width: 22rem;
+}
+
 .card-img-top{
-    padding: 20px;
     background-color: $secondary_color;
+    align-self: center;
+    padding: 15px 10px 15px 10px;
 }
 
 .card-body{
@@ -43,16 +64,16 @@
     flex-direction: column;
     justify-content: space-between;
     background-color: $secondary_color;
+    padding: 15px 20px 15px 20px;
 }
 
 .card-title{
-    font-size: 3rem;
+    font-size: 3.4rem;
     color: white;
 }
 
 .card-text{
-    font-size: 1.4rem;
+    font-size: 2.2rem;
     justify-content: flex-start;
     color: white;
-}
-
+} 
